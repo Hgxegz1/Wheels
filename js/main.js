@@ -1,5 +1,5 @@
 function getDataFromServer() {
-    fetch('http://9a75-76-91-41-187.ngrok.io/api')
+    fetch('http://ab0b-76-91-41-187.ngrok.io/api')
     .then(function(response) {
         return response.json();
     })
@@ -10,7 +10,7 @@ function getDataFromServer() {
 }
 
 function getDataFromServer2() {
-    fetch('http://9a75-76-91-41-187.ngrok.io/api2')
+    fetch('http://ab0b-76-91-41-187.ngrok.io/api2')
     .then(function(response) {
         return response.json();
     })
