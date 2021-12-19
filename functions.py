@@ -31,8 +31,8 @@ def returnCats(location, term):
     collection = Counter(totalCats)
     top5 = []
     #this returns the top 5 from the counter as a list
-    for i in range(0, len(collection.most_common(5))):
-        top5.append((collection.most_common(5)[i][0]))
+    for i in range(0, len(collection.most_common(6))):
+        top5.append((collection.most_common(6)[i][0]))
     return(top5)
 
 def chooseCat(topFiveList):
