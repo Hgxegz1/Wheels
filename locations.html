@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wheels App</title>
-    <link href="https://fonts.googleapis.com/css2?family=Suez+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="/js/main.js"></script>
-  </head>
-  <body>
-    <!--
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wheels App</title>
+  <link href="https://fonts.googleapis.com/css2?family=Suez+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="/Wheels/js/main.js"></script>
+</head>
+
+<body class="gradient">
+  <!--
     <h1 id='testHeader'>This is a test</h1>
     <input id="input-box" type="text">
     <button onclick="getDataFromServer()">Change Button</button>
@@ -19,27 +21,26 @@
     <input id="input-box2" type="text">
     <button onclick="getDataFromServer2()">Change Button</button>
     -->
-    <div class="gradient">
-      <div class="navbar">
-          <a href="index.html"><img src="logo.png" alt="Wheels Logo" class="logo"></a>
-          <button type="startover" id="startover"><a href="index.html">Start Over</a></button>
-      </div>
-
-      <div class="content">
-          <div class="content-container">
-              <h1>San Francisco, CA</h1>
-              <p>Select what you would like to explore within this location</p>
-              <select id="activity" action="">
-                  <option value="activities">Activities</option>
-                  <option value="restaurants">Restaurants</option>
-                  <option value="vistapoints">Vista Points</option>
-              </select>
-              <button onclick=sendRequest() type="submit" id="submit"><a href= "options.html">Submit</a></button>
-          </div>
-          <div class="img-container">
-              <img src="attraction.jpg" class="image-view" alt="Beautiful View">
-          </div>
-      </div>
+  <div class="navbar">
+    <a href="index.html"><img src="logo.png" alt="Wheels Logo" class="logo"></a>
+    <button type="startover" id="startover"><a href="index.html">Start Over</a></button>
   </div>
-  </body>
+
+  <div class="content">
+    <div class="content-container">
+      <h1>San Francisco, CA</h1>
+      <p>Select what you would like to explore within this location</p>
+      <select id="choice" action="">
+        <option value="activities">Activities</option>
+        <option value="restaurants">Restaurants</option>
+        <option value="vistapoints">Vista Points</option>
+      </select>
+      <button onclick="setChoice()" type="submit" id="submit"><a href="options.html">Submit</a></button>
+    </div>
+    <div class="img-container">
+      <img src="attraction.jpg" class="image-view" alt="Beautiful View">
+    </div>
+  </div>
+</body>
+
 </html>

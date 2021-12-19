@@ -5,7 +5,8 @@ from key import key
 
 #URL to make API requests to
 url = 'https://api.yelp.com/v3/businesses/search'
-#this is the header for the get request    
+
+#this is the header for the get request
 headers = {
     'Authorization': 'Bearer %s' % key
 }
@@ -40,7 +41,7 @@ def chooseCat(topFiveList):
     for i in range(0, 5):
         print(str(i + 1) + ". " + topFiveList[i])
     choice = int(input("Put the integer of the category you would like to choose: "))
-    
+
     return topFiveList[choice - 1]
 
 def listLocations(category, location, term):
@@ -59,6 +60,3 @@ def listLocations(category, location, term):
         for i in range(0, size):
             if format(q['categories'][i]['title']) == category:
                 print(format(q['name']))
-
-
-
