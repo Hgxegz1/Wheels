@@ -6,7 +6,7 @@ function sendRequest() {
      "headers": {}})
         .then(response => response.json())
         .then(data => localStorage.setItem('data', data))
-        .then(() => window.location = '/options.html')
+        .then(() => window.location = './options.html')
 }
 
 function setLocation() {
