@@ -39,7 +39,12 @@ function sendRequest() {
         .then(data => localStorage.setItem('data', data))
 }
 
+//this is to use the data of different categories to populate the options
 function getData() {
     values = localStorage.getItem('data')
-    console.log(localStorage.getItem('data'))
+    for (let i = 0; i < values.length; i++) {
+        console.log(values[i])
+      }
 }
+
+    
