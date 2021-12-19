@@ -1,5 +1,5 @@
 function getDataFromServer() {
-    fetch('https://ab0b-76-91-41-187.ngrok.io/api')
+    fetch('http://ac4c-76-91-41-187.ngrok.io/api')
     .then(function(response) {
         return response.json();
     })
@@ -10,7 +10,7 @@ function getDataFromServer() {
 }
 
 function getDataFromServer2() {
-    fetch('https://ab0b-76-91-41-187.ngrok.io/api2')
+    fetch('http://ac4c-76-91-41-187.ngrok.io/api2')
     .then(function(response) {
         return response.json();
     })
@@ -21,7 +21,7 @@ function getDataFromServer2() {
 }
 
 function getCategoryForWheel(location, term) {
-    fetch('http://127.0.0.1:5000/getCats?l='+str(location)+"&t="+str(input2))
+    fetch('http://ac4c-76-91-41-187.ngrok.io/getCats?l='+str(location)+"&t="+str(input2))
     .then(function(response) {
         return response.json();
     })
