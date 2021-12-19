@@ -1,6 +1,11 @@
+body {
+    overflow: none;
+}
+
 .gradient {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
+    overflow: none;
     background-image: linear-gradient(to right, #FFFBF2, #8ECB87, #FFCF72);
     background-size: cover;
     background-position: center;
@@ -10,10 +15,13 @@
     width: 85%;
     margin: auto;
     padding: 60px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .logo {
-    width: 10%;
+    width: 50%;
     cursor: pointer;
 }
 
@@ -21,7 +29,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 100%;
-    padding-left: 140px;
+    padding-left: 150px;
 }
 
 .content-container {
@@ -61,6 +69,33 @@
     background-color: #1C6354;
 }
 
+#submit a {
+    text-decoration: none;
+    color: white;
+}
+
 .img-container {
     padding-left: 50px;
+}
+
+#dropdown {
+    border-radius: 25px;
+    border: none;
+    width: 30%;
+    height: 30px;
+    padding-left: 30px;
+}
+
+#startover {
+    border-radius: 25px;
+    border: none;
+    width: 10%;
+    height: 30px;
+    color: white;
+    background-color: #1C6354;
+}
+
+#startover a {
+    text-decoration: none;
+    color: white;
 }
