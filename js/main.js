@@ -27,6 +27,7 @@ function getChoice() {
 
 function setCategory(cat) {
     localStorage.setItem('category', cat);
+    window.location = './wheel.html'
 }
 
 function getCategory() {
@@ -39,4 +40,12 @@ function getData() {
     for(let i = 0; i < valArray.length; i++) {
         document.getElementById(i.toString()).innerHTML = valArray[i]
     }
+}
+
+function putLocationOnPutter() {
+    $('#locationPutter').text(localStorage.getItem('location'));
+}
+
+function returnHome() {
+    window.location = './index.html';
 }

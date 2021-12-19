@@ -111,14 +111,11 @@ html,body {
     font-family: system-ui;
 }
 
-#startover a {
-    text-decoration: none;
-    color: white;
+#startover:hover {
+    background-color:#369E89;
+    cursor: pointer;
 }
 
-#startover a:hover {
-    color:#369E89;
-}
 
 .grid-container {
     display: grid;
