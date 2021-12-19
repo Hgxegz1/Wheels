@@ -36,7 +36,7 @@ function setLocation() {
 }
 
 function getLocation() {
-    return localStorage.getItem('location', $('#location').val());
+    return localStorage.getItem('location');
 }
 
 function setChoice() {
