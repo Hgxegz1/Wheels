@@ -21,10 +21,10 @@ function getDataFromServer2() {
 }
 
 function sendRequest() {
-    getActivity()
+    setChoice()
     loc = localStorage.getItem('location')
-    act = localStorage.getItem('activity')
-    fetch('https://ac4c-76-91-41-187.ngrok.io/getCats?l='+loc+'&t='+act,
+    cho = localStorage.getItem('choice')
+    fetch('https://ac4c-76-91-41-187.ngrok.io/getCats?l='+loc+'&t='+cho,
     {"method": "GET",
      "headers": {}})
         .then(response => response.json())
