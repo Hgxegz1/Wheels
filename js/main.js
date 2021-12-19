@@ -21,11 +21,25 @@ function getDataFromServer2() {
 }
 
 function getLocation() {
-    let location = $('#location').val();
-    console.log(location)
-    /*fetch('https://ac4c-76-91-41-187.ngrok.io/getCats?l='+location+'&t=Food',
+    localStorage.setItem('location', $('#location').val())
+}
+
+function getActivity() {
+    localStorage.setItem('activity', $('#activity :selected').text())
+}
+
+function sendRequest() {
+    getActivity()
+    loc = localStorage.getItem('location')
+    act = localStorage.getItem('activity')
+    fetch('https://ac4c-76-91-41-187.ngrok.io/getCats?l='+loc+'&t='+act,
     {"method": "GET",
      "headers": {}})
         .then(response => response.json())
-        .then(data => console.log(data)); */
+        .then(data => console.log(data));
+    localStorage.setItem('data', data)
+}
+
+function getData() {
+    console.log(localStorage.getItem('data'))
 }
