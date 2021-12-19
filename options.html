@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,10 +8,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Suez+One&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="/Wheels/js/main.js"></script>
+  <script src="./js/main.js"></script>
 </head>
-
-<body class="gradient">
+<body onload="getData()" class="gradient">
   <!--
     <h1 id='testHeader'>This is a test</h1>
     <input id="input-box" type="text">
@@ -25,21 +23,18 @@
     <a href="index.html"><img src="newlogo.png" alt="Wheels Logo" class="logo"></a>
     <button type="startover" id="startover"><a href="index.html">Start Over</a></button>
   </div>
-
   <div class="content">
     <div class="content-container">
       <h1>San Francisco, CA</h1>
     </div>
   </div>
-
   <div class="grid-container">
-    <button id="option-one"><a href="wheel.html">Chinese</a></button>
-    <button id="option-two"><a href="wheel.html">Korean</a></button>
-    <button id="option-three"><a href="wheel.html">Mexican</a></button>
-    <button id="option-four"><a href="wheel.html">Italian</a></button>
-    <button id="option-five"><a href="wheel.html">American</a></button>
-    <button id="option-six"><a href="wheel.html">Vietnamese</a></button>
+    <button onclick="setCategory(this.innerText)" id="0">Chinese</button>
+    <button onclick="setCategory(this.innerText)" id="1">Korean</button>
+    <button onclick="setCategory(this.innerText)" id="2">Mexican</button>
+    <button onclick="setCategory(this.innerText)" id="3">Italian</button>
+    <button onclick="setCategory(this.innerText)" id="4">American</button>
+    <button onclick="setCategory(this.innerText)" id="5">Vietnamese</button>
   </div>
 </body>
-
 </html>
