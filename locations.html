@@ -10,7 +10,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="./js/main.js"></script>
 </head>
-<body class="gradient">
+<body onload="putLocationOnPutter()" class="gradient">
   <!--
     <h1 id='testHeader'>This is a test</h1>
     <input id="input-box" type="text">
@@ -21,16 +21,19 @@
     -->
   <div class="navbar">
     <a href="index.html"><img src="newlogo.png" alt="Wheels Logo" class="logo"></a>
-    <button type="startover" id="startover"><a href="index.html">Start Over</a></button>
+    <button onclick="returnHome()" type="startover" id="startover">Start Over</button>
   </div>
   <div class="content">
     <div class="content-container">
-      <h1>San Francisco, CA</h1>
+      <h1 id="locationPutter">San Francisco, CA</h1>
       <p>Select what you would like to explore within this location</p>
       <select id="choice" action="">
         <option value="activities">Activities</option>
-        <option value="restaurants">Restaurants</option>
-        <option value="vistapoints">Vista Points</option>
+        <option value="shopping">Shopping</option>
+        <option value="exercise">Exercise</option>
+        <option value="entertainment">Entertainment</option>
+        <option value="self care">Self Care</option>
+        <option value="food">Food</option>
       </select>
       <button onclick="sendRequest()" type="submit" id="submit">Submit</button>
     </div>
