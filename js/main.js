@@ -30,4 +30,3 @@ function getCategoryForWheel(location, term) {
         $("#testHeader2").html($("#input-box2").val())
     })
 }
-
