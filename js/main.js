@@ -1,6 +1,3 @@
-var location = "" //this will hold our location once it is inputted
-var category = "" //this will hold the category once it is inputted
-
 function getDataFromServer() {
     fetch('https://ac4c-76-91-41-187.ngrok.io/api')
     .then(function(response) {
