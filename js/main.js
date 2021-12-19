@@ -20,14 +20,6 @@ function getDataFromServer2() {
     })
 }
 
-function getLocation() {
-    localStorage.setItem('location', $('#location').val())
-}
-
-function getActivity() {
-    localStorage.setItem('activity', $('#activity :selected').text())
-}
-
 function sendRequest() {
     getActivity()
     loc = localStorage.getItem('location')
@@ -40,7 +32,30 @@ function sendRequest() {
     alert("We are done with the request")
 }
 
-//this is to use the data of different categories to populate the options
+function setLocation() {
+    localStorage.setItem('location', $('#location').val());
+}
+
+function getLocation() {
+    return localStorage.getItem('location');
+}
+
+function setChoice() {
+    localStorage.setItem('choice', $('#dropdown :selected').val());
+}
+
+function getChoice() {
+    return localStorage.getItem('choice');
+}
+
+function setCategory(cat) {
+    localStorage.setItem('category', cat);
+}
+
+function getCategory() {
+    return localStorage.getItem('category');
+}
+
 function getData() {
     values = localStorage.getItem('data')
     var valArray= values.split(',');
@@ -48,4 +63,3 @@ function getData() {
         document.getElementById(i.toString()).innerHTML = valArray[i]
     }
 }
-    
