@@ -7,11 +7,11 @@ def create_app():
     CORS(app)
 
     #after the user inputs the category use this function
-    @app.route('/getCats')
+    @app.route('/getCats', methods=['GET'])
     def catergories():
         location = request.args.get('l')
         term = request.args.get('t')
-        return returnCats(location, term)
+        return jsonify(returnCats(location, term))
 
     @app.route('/api')
     def api():
@@ -20,4 +20,5 @@ def create_app():
     @app.route('/api2')
     def api2():
         return jsonify({'data' : 'Hello World2!'})
+
     return app
