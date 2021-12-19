@@ -22,16 +22,19 @@
     <div class="gradient">
       <div class="navbar">
           <a href="index.html"><img src="logo.png" alt="Wheels Logo" class="logo"></a>
+          <button type="startover" id="startover"><a href="index.html">Start Over</a></button>
       </div>
 
       <div class="content">
           <div class="content-container">
-              <h1>Explore new activities in places you're traveling to</h1>
-              <p>Search a city and we will randomly generate activities for you to help you plan your trip. Discover new restaurants, vista points, and more that you've never thought of!</p>
-              <form id="search-form" action="">
-                  <input id="location" type="text" required placeholder="Search a location">
-                  <button type="submit" id="submit"><a href="locations.html">Submit</a></button>
-              </form>
+              <h1>San Francisco, CA</h1>
+              <p>Select what you would like to explore within this location</p>
+              <select id="dropdown" action="">
+                  <option value="activities">Activities</option>
+                  <option value="restaurants">Restaurants</option>
+                  <option value="vistapoints">Vista Points</option>
+              </select>
+              <button type="submit" id="submit">Submit</button>
           </div>
           <div class="img-container">
               <img src="attraction.jpg" class="image-view" alt="Beautiful View">
