@@ -36,10 +36,10 @@ function sendRequest() {
     {"method": "GET",
      "headers": {}})
         .then(response => response.json())
-        .then(data => console.log(data));
-    localStorage.setItem('data', data)
+        .then(data => localStorage.setItem('data', data))
 }
 
 function getData() {
+    values = localStorage.getItem('data')
     console.log(localStorage.getItem('data'))
 }
