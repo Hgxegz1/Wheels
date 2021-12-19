@@ -1,0 +1,101 @@
+body {
+    overflow: none;
+}
+
+.gradient {
+    width: 100vw;
+    height: 100vh;
+    overflow: none;
+    background-image: linear-gradient(to right, #FFFBF2, #8ECB87, #FFCF72);
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 60px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 50%;
+    cursor: pointer;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    padding-left: 150px;
+}
+
+.content-container {
+    width: 100%;
+}
+
+.content-container h1 {
+    color: #1C6354;
+    font-size: 3rem;
+    font-family: 'Suez One', serif;
+    padding-right: 100px;
+}
+
+.content-container p {
+    font-size: 1.5rem;
+    padding-right: 200px;
+}
+
+.content-container form {
+    
+}
+
+#location {
+    border-radius: 25px;
+    border: none;
+    width: 30%;
+    height: 30px;
+    padding-left: 30px;
+}
+
+#submit {
+    border-radius: 25px;
+    border: none;
+    width: 15%;
+    height: 30px;
+    color: white;
+    background-color: #1C6354;
+}
+
+#submit a {
+    text-decoration: none;
+    color: white;
+}
+
+.img-container {
+    padding-left: 50px;
+}
+
+#dropdown {
+    border-radius: 25px;
+    border: none;
+    width: 30%;
+    height: 30px;
+    padding-left: 30px;
+}
+
+#startover {
+    border-radius: 25px;
+    border: none;
+    width: 10%;
+    height: 30px;
+    color: white;
+    background-color: #1C6354;
+}
+
+#startover a {
+    text-decoration: none;
+    color: white;
+}
