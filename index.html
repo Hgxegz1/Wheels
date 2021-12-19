@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,9 +8,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Suez+One&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <!-- <script src="/js/main2.js"></script> -->
+  <script src="./js/main.js"></script>
 </head>
-
 <body class="gradient">
   <!--
     <h1 id='testHeader'>This is a test</h1>
@@ -21,11 +19,9 @@
     <input id="input-box2" type="text">
     <button onclick="getDataFromServer2()">Change Button</button>
     -->
-
   <div class="navbar">
     <a href="index.html"><img src="newlogo.png" alt="Wheels Logo" class="logo"></a>
   </div>
-
   <div class="content">
     <div class="content-container">
       <h1>Explore new activities in places you're traveling to</h1>
@@ -33,16 +29,12 @@
         restaurants, vista points, and more that you've never thought of!</p>
       <form id="search-form" action="locations.html">
         <input id="location" type="text" required placeholder="Search a location">
-        <a href="locations.html">
-          <button id="submit">Submit</button>
-        </a>
+        <button onclick="setLocation()" type="submit" id="submit"><a href="locations.html">Submit</a></button>
       </form>
     </div>
     <div class="img-container">
       <img src="attraction.jpg" class="image-view" alt="Beautiful View">
     </div>
   </div>
-
 </body>
-
 </html>
