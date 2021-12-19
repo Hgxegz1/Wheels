@@ -29,6 +29,7 @@ function sendRequest() {
      "headers": {}})
         .then(response => response.json())
         .then(data => localStorage.setItem('data', data))
+    alert("We are done with the request")
 }
 
 function setLocation() {
@@ -58,4 +59,7 @@ function getCategory() {
 function getData() {
     values = localStorage.getItem('data')
     var valArray= values.split(',');
+    for(let i = 0; i < valArray.length; i++) {
+        document.getElementById(i.toString()).innerHTML = valArray[i]
+    }
 }
