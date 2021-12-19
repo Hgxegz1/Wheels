@@ -1,13 +1,12 @@
 function sendRequest() {
-    setChoice();
     loc = localStorage.getItem('location')
-    cho = localStorage.getItem('choice')
+    cho = $('#choice :selected').val()
     fetch('https://ac4c-76-91-41-187.ngrok.io/getCats?l='+loc+'&t='+cho,
     {"method": "GET",
      "headers": {}})
         .then(response => response.json())
         .then(data => localStorage.setItem('data', data))
-    alert("We are done with the request")
+        .then(() => window.location = '/options.html')
 }
 
 function setLocation() {
@@ -19,7 +18,7 @@ function getLocation() {
 }
 
 function setChoice() {
-    localStorage.setItem('choice', $('#dropdown :selected').val());
+    localStorage.setItem('choice', $('#choice :selected').val())
 }
 
 function getChoice() {
