@@ -1,4 +1,7 @@
-ngrok.exe
 githubkey
+ngrok
+ngrok.exe
+key.py
 venv
 __pycache__
+__pycache__/
